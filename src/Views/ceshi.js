@@ -1,0 +1,9 @@
+getVeky(){
+    dispatch(()=>{
+        axios.get('/C400'+this.props.location.state.songMid+'.m4a?fromtag=0&guid=126548448&vkey='+)
+        .then(data=>{
+            console.log(data.data.data.item[0].veky,333)
+        })
+    })
+}
+http://ws.stream.qqmusic.qq.com/C400003lghpv0jfFXG.m4a?fromtag=0&guid=126548448&vkey=
